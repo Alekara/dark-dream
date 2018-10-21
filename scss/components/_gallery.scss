@@ -1,0 +1,44 @@
+.gallery {
+  width: 1366px;
+  margin: 0 auto 200px;
+  display: flex;
+  flex-wrap: wrap;
+
+  & img {
+    margin: 15px;
+  }
+
+  &__title {
+    width: 100%;
+    margin-left: 93px;
+    margin-bottom: 30px;
+  }
+
+  &__column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 35%;
+
+    & img:first-child {
+      margin-top: 70px;
+    }
+  }
+
+  &__column-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-around;
+    align-content: center;
+    width: 65%;
+  }
+
+  & img:nth-child(2) {
+    align-self: flex-end;
+  }
+
+  &__btn {
+    margin: 75px auto 0;
+  }
+}

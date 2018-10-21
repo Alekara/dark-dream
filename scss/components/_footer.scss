@@ -1,0 +1,28 @@
+.footer {
+  min-height: 200px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+
+    &:hover {
+      background-color: $color-dark;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.about-me {
+  width: 1376px;
+  height: 658px;
+  margin: 0 auto 200px;
+  padding: 50px 0;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  &__container {
+
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-family: Raleway;
+    color:  $color-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    width: 450px;
+  }
+
+  &__text:last-of-type {
+    margin-bottom: 50px;
+  }
+
+  &__photo {
+    position: absolute;
+    right: 73px;
+    top: -50px;
+  }
+
+
+}

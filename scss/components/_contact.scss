@@ -1,0 +1,68 @@
+.contact {
+  min-height: 658px;
+  padding-top: 50px;
+  margin-bottom: 180px;
+
+  &__container {
+
+  }
+
+  &__photo {
+    position: absolute;
+    left: 69px;
+    top: -50px;
+  }
+
+  &__title {
+    width: 470px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    width: 470px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & input {
+      width: 215px;
+
+      margin-bottom: 30px;
+
+    }
+
+    & textarea {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    & input,
+    & textarea {
+      padding: 14px 8px;
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      line-height: 28px;
+      background-color: #373737;
+      border: none;
+      border-bottom: 1px solid #737373;
+      color: #fff;
+      // background-color: pink;
+    }
+
+    & input:focus,
+    & textarea:focus {
+      outline: none;
+      border-bottom: 1px solid #ad7835;
+    }
+  }
+
+  &__btn {
+    padding-top: 2px;
+    line-height: 16px;
+
+  }
+
+
+}

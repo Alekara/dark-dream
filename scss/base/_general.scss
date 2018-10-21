@@ -1,0 +1,92 @@
+$color-primary: #ad7835;
+$color-white: #fff;
+$color-dark: #373737;
+
+@font-face {
+  font-family: "Droid Serif";
+  src: url("fonts/droid_serif.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("fonts/Raleway-Regular.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+p, h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  background: url(img/bg-big.jpg) top center no-repeat;
+  max-width: 1920px;
+  min-height: 3400px;
+  padding: 1px;
+}
+
+.btn {
+  display: inline-block;
+  width: 180px;
+  height: 57px;
+  border: 1px solid #6b4922;
+  text-decoration: none;
+  color: $color-primary;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 19px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $color-primary;
+  color: $color-dark;
+  border: 1px solid #6b4922;
+}
+
+
+
+.title {
+  font-family: "Droid Serif";
+  color: $color-primary;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 80px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 91px;
+  background-color:$color-primary;
+}
+
+.centered-container {
+  width: 1302px;
+  height: 558px;
+  box-shadow: 0px 0px 80px 0px rgba(43, 43, 43, 0.3);
+  background-color:  $color-dark;
+  padding: 50px 70px;
+  margin: 0 auto;
+  position: relative;
+}
