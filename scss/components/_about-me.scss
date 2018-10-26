@@ -25,3 +25,32 @@
       top: -50px;
   }
 }
+
+@media (max-width: 1376px) {
+  .about-me {
+    padding: 30px 0;
+    margin: $section-margin-desk-small;  
+
+    &__title {
+      margin-bottom: $title-margin-desk-small;
+    }
+
+    &__text {
+      width: 460px;
+      margin-bottom: 20px;
+      color:  $color-grey-light;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;    
+    }
+
+    &__text:last-of-type {
+      margin-bottom: 30px;
+    }
+
+    &__photo {
+      right: 40px;
+      top: -30px;
+    }
+  }
+}

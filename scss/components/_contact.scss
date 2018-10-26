@@ -23,9 +23,7 @@
 
     & input {
       width: 215px;
-
       margin-bottom: 45px;
-
     }
 
     & textarea {
@@ -38,12 +36,11 @@
       padding: 14px 8px;
       font-family: "Raleway Regular", sans-serif;
       font-size: 16px;
-      line-height: 28px;
-      background-color: #373737;
+      line-height: 28px;      
       border: none;
       border-bottom: 1px solid #737373;
+      background-color: #373737;
       color: #fff;
-      // background-color: pink;
     }
 
     & input:focus,
@@ -56,8 +53,5 @@
   &__btn {
     padding-top: 2px;
     line-height: 16px;
-
   }
-
-
 }
