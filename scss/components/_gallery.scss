@@ -1,6 +1,6 @@
 .gallery {
   width: 1366px;
-  margin: 0 auto 200px;
+  margin: $section-margin;
   display: flex;
   flex-wrap: wrap;
 
@@ -10,15 +10,15 @@
 
   &__title {
     width: 100%;
-    margin-left: 93px;
-    margin-bottom: 30px;
+    margin-left: 92px;
+    margin-bottom: $title-margin;
   }
 
   &__column-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 35%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
 
     & img:first-child {
       margin-top: 70px;
@@ -26,12 +26,13 @@
   }
 
   &__column-2 {
+    width: 65%;
+    margin-bottom: 75px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: space-around;
-    align-content: center;
-    width: 65%;
+    align-content: center;    
   }
 
   & img:nth-child(2) {
@@ -39,6 +40,6 @@
   }
 
   &__btn {
-    margin: 75px auto 0;
+    margin: 0 auto;
   }
 }

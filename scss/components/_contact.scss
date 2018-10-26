@@ -1,22 +1,17 @@
 .contact {
-  min-height: 658px;
-  padding-top: 50px;
-  margin-bottom: 180px;
-
-  &__container {
-
-  }
+  padding: 50px 0;
+  margin: $section-margin;
 
   &__photo {
     position: absolute;
-    left: 69px;
-    top: -50px;
+      left: 69px;
+      top: -50px;
   }
 
   &__title {
     width: 470px;
     margin-left: auto;
-    margin-bottom: 50px;
+    margin-bottom: $title-margin;
   }
 
   &__form {
@@ -29,7 +24,7 @@
     & input {
       width: 215px;
 
-      margin-bottom: 30px;
+      margin-bottom: 45px;
 
     }
 
@@ -41,7 +36,7 @@
     & input,
     & textarea {
       padding: 14px 8px;
-      font-family: Raleway, sans-serif;
+      font-family: "Raleway Regular", sans-serif;
       font-size: 16px;
       line-height: 28px;
       background-color: #373737;

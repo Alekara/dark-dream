@@ -1,38 +1,27 @@
 .about-me {
-  width: 1376px;
-  height: 658px;
-  margin: 0 auto 200px;
   padding: 50px 0;
+  margin: $section-margin;  
 
   &__title {
-    text-align: left;
-    margin-bottom: 35px;
-  }
-
-  &__container {
-
+    margin-bottom: $title-margin;
   }
 
   &__text {
+    width: 470px;
     margin-bottom: 30px;
-    font-family: Raleway;
-    color:  $color-white;
-    font-size: 16px;
+    color:  $color-grey-light;
     font-weight: 400;
     line-height: 28px;
-    text-align: left;
-    width: 450px;
+    text-align: left;    
   }
 
   &__text:last-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   &__photo {
     position: absolute;
-    right: 73px;
-    top: -50px;
+      right: 73px;
+      top: -50px;
   }
-
-
 }

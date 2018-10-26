@@ -1,7 +1,3 @@
-$color-primary: #ad7835;
-$color-white: #fff;
-$color-dark: #373737;
-
 @font-face {
   font-family: "Droid Serif";
   src: url("fonts/droid_serif.woff") format("woff");
@@ -12,11 +8,18 @@ $color-dark: #373737;
   src: url("fonts/Raleway-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("fonts/Raleway-Bold.ttf");
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #1d1d1d;
   box-sizing: border-box;
+  background-color: #1d1d1d;  
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 16px;
 }
 
 *, *::before, *::after {
@@ -32,7 +35,6 @@ p, h1, h2, h3, ul, li {
 .container {
   background: url(img/bg-big.jpg) top center no-repeat;
   max-width: 1920px;
-  min-height: 3400px;
   padding: 1px;
 }
 
@@ -43,7 +45,7 @@ p, h1, h2, h3, ul, li {
   border: 1px solid #6b4922;
   text-decoration: none;
   color: $color-primary;
-  font-family: Raleway, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: bold;
   background-color: transparent;
@@ -62,12 +64,13 @@ p, h1, h2, h3, ul, li {
 
 
 .title {
-  font-family: "Droid Serif";
+  font-family: "Droid Serif", serif;
   color: $color-primary;
   font-size: 60px;
   font-weight: 400;
   line-height: 80px;
   position: relative;
+  text-align: left;
 }
 
 .title::after {
@@ -83,7 +86,7 @@ p, h1, h2, h3, ul, li {
 
 .centered-container {
   width: 1302px;
-  height: 558px;
+  min-height: 558px;
   box-shadow: 0px 0px 80px 0px rgba(43, 43, 43, 0.3);
   background-color:  $color-dark;
   padding: 50px 70px;
