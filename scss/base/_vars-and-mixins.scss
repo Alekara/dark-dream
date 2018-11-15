@@ -6,6 +6,8 @@ $color-dark: #373737;
 
 $section-margin: 0 auto 200px;
 $section-margin-desk-small: 0 auto 150px;
+$section-margin-tablet: 0 auto 100px;
+$section-margin-mobile: 0 auto 50px;
 
 $title-margin: 35px;
 $title-margin-desk-small: 35px;
@@ -14,5 +16,7 @@ $title-margin-desk-small: 35px;
 $desk-small-width: 1376px;
 $tab-width: 1024px;
 $mob-width: 720px;
+
+//минимальная ширина должна быть 380
 
 

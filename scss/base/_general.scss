@@ -34,6 +34,8 @@ p, h1, h2, h3, ul, li {
 
 .container {
   background: url(img/bg-big.jpg) top center no-repeat;
+  //СДЕЛАТЬ УМЕНЬШЕННЫЕ ВЕРСИИ ФОНА
+  
   max-width: 1920px;
   padding: 1px;
 }
@@ -42,7 +44,7 @@ p, h1, h2, h3, ul, li {
   width: 180px;
   height: 57px;
   padding-top: 19px;
-  display: inline-block;
+  display: block;
   border: 1px solid #6b4922;
   text-decoration: none;
   color: $color-primary;
@@ -97,8 +99,7 @@ p, h1, h2, h3, ul, li {
 }
 
 
-@media (max-width: $desk-small-width) {
-  
+@media (max-width: $desk-small-width) {  
   html, body {    
     font-size: 14px;
   }
@@ -116,13 +117,26 @@ p, h1, h2, h3, ul, li {
 }
 
 @media (max-width: $tab-width) {
+  .container {
+    background: url(img/bg-medium.jpg) top center no-repeat;
+  }
   .centered-container {
-
+    width: 680px;
   }
 }
 
 @media (max-width: $mob-width) {
+  .centered-container {
+    width: 400px;   
 
+  }
+  
+  .title {
+    font-size: 32px;
+    line-height: 60px;
+    
+
+  }
 }
 
 

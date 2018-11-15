@@ -135,12 +135,27 @@
 
 @media (max-width: $tab-width) {
   .articles {
+    padding-top: 125px;
+    margin: $section-margin-tablet;
+    
+    &__container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    &__item:nth-child(2) {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
 
   }
 }
 
 @media (max-width: $mob-width) {
   .articles {
+    
+    &__title {
 
+    }
   }
 }
