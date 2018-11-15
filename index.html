@@ -28,7 +28,7 @@
           <picture class="about-me__photo">
             <source media="(min-width: 1376px)" srcset="img/about-me.jpg">
 <!--            <source media="(min-width: 768px)" srcset="img/fish-small-tablet.png">-->
-            <img src="img/about-me-desk-small.jpg" alt="Фотограф у водной глади">
+            <img src="img/about-me-smalldesk.jpg" alt="Фотограф у водной глади">
           </picture>  
         </div>
       </section>
@@ -37,21 +37,33 @@
         <h2 class="articles__title title">Latest articles</h2>
         <div class="articles__container">
           <div class="articles__item">
-            <img class="articles__photo" src="img/article1.jpg" alt="Eagle">
+            <picture>
+              <source media="(min-width: 1377px)" srcset="img/article1.jpg">
+              <source media="(min-width: 1025px)" srcset="img/article1-smalldesk.jpg">
+              <img class="articles__photo" src="img/article1-mobile.jpg" alt="Eagle">
+            </picture>
             <h3 class="articles__heading">Lorem ipsum dolor</h3>
             <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis libero beatae ullam quo, animi harum fuga necessitatibus quas ratione. Ipsum, eum, blanditiis.</p>
             <a href="#" class="articles__link">Read more</a>
           </div>
           
           <div class="articles__item">
-            <img class="articles__photo" src="img/article2.jpg" alt="Eagle">
+            <picture>
+              <source media="(min-width: 1377px)" srcset="img/article2.jpg">
+              <source media="(min-width: 1025px)" srcset="img/article2-smalldesk.jpg">
+              <img class="articles__photo" src="img/article2-mobile.jpg" alt="Forest">
+            </picture>
             <h3 class="articles__heading">Lorem ipsum dolor</h3>
             <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis libero beatae ullam quo, animi harum fuga necessitatibus quas ratione. Ipsum, eum, blanditiis.</p>
             <a href="#" class="articles__link">Read more</a>
           </div>
           
           <div class="articles__item">
-            <img class="articles__photo" src="img/article3.jpg" alt="Eagle">
+            <picture>
+              <source media="(min-width: 1377px)" srcset="img/article3.jpg">
+              <source media="(min-width: 1025px)" srcset="img/article3-smalldesk.jpg">
+              <img class="articles__photo" src="img/article3-mobile.jpg" alt="Bear">
+            </picture>
             <h3 class="articles__heading">Lorem ipsum dolor</h3>
             <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis libero beatae ullam quo, animi harum fuga necessitatibus quas ratione. Ipsum, eum, blanditiis.</p>
             <a href="#" class="articles__link">Read more</a>
@@ -64,32 +76,39 @@
         <div class="gallery__column-1">
           <picture>
             <source media="(min-width: 1377px)" srcset="img/photo-1.jpg">
+            <source media="(min-width: 1025px)" srcset="img/photo-1-smalldesk.jpg">
             <img src="img/photo-1-tablet.jpg" alt="Фото-1">
           </picture>
           <picture>
             <source media="(min-width: 1377px)" srcset="img/photo-2.jpg">
+            <source media="(min-width: 1025px)" srcset="img/photo-2-smalldesk.jpg">
             <img src="img/photo-2-tablet.jpg" alt="Фото-2">
           </picture>
         </div>
         <div class="gallery__column-2">
           <picture>
             <source media="(min-width: 1377px)" srcset="img/photo-3.jpg">
+            <source media="(min-width: 1025px)" srcset="img/photo-3-smalldesk.jpg">
             <img src="img/photo-3-tablet.jpg" alt="Фото-3">
           </picture>
           <picture>
             <source media="(min-width: 1377px)" srcset="img/photo-4.jpg">
+            <source media="(min-width: 1025px)" srcset="img/photo-4-smalldesk.jpg">
             <img src="img/photo-4-tablet.jpg" alt="Фото-4">
           </picture>
           <picture>
             <source media="(min-width: 1377px)" srcset="img/photo-5.jpg">
+            <source media="(min-width: 1025px)" srcset="img/photo-5-smalldesk.jpg">
             <img src="img/photo-5-tablet.jpg" alt="Фото-5">
           </picture>
           <picture>
             <source media="(min-width: 1377px)" srcset="img/photo-6.jpg">
+            <source media="(min-width: 1025px)" srcset="img/photo-6-smalldesk.jpg">
             <img src="img/photo-6-tablet.jpg" alt="Фото-6">
           </picture>
           <picture>
             <source media="(min-width: 1377px)" srcset="img/photo-7.jpg">
+            <source media="(min-width: 1025px)" srcset="img/photo-7-smalldesk.jpg">
             <img src="img/photo-7-tablet.jpg" alt="Фото-7">
           </picture>
         </div>
@@ -105,7 +124,11 @@
             <textarea name="mesage" id="message" cols="40" rows="3">Message</textarea>
             <button class="btn contact__btn" href="#">Send message</button>
           </form>
-          <img class="contact__photo" src="img/pen-paper.jpg" width="588" height="658" alt="Pen and paper">
+          <picture>
+            <source media="(min-width: 1377px)" srcset="img/pen-paper.jpg">
+            <source media="(min-width: 1025px)" srcset="img/pen-paper-smalldesk.jpg">
+            <img class="contact__photo" src="img/pen-paper-mobile.jpg" alt="Pen and paper">
+          </picture>
         </div>
       </section>
     </main>

@@ -44,9 +44,32 @@
   }
 }
 
-@media (max-width: 1376px) {
+@media (max-width: $desk-small-width) {
   .gallery {
-    width: 700px;
+    width: 1024px;
+
+    &__column-1 {
+      width: 37%;
+
+      & picture:first-child {
+        margin-top: 45px;
+      }
+    }
+    
+    &__column-2 {
+      width: 63%;
+    }
+
+
+    & img {
+      margin: 5px;
+    }
+  }
+}
+
+@media (max-width: $tab-width) {
+  .gallery {
+    width: 720px;
     
     &__column-1 {
 
@@ -58,5 +81,12 @@
     & img {
       margin: 5px;
     }
+  }
+}
+
+
+@media (max-width: $mob-width) {
+  .gallery {
+
   }
 }

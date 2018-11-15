@@ -55,3 +55,42 @@
     line-height: 16px;
   }
 }
+
+@media (max-width: $desk-small-width) {
+  .contact {
+    
+    &__photo {
+      left: 30px;
+      top: -30px;
+    }
+    
+    &__title {
+      width: 400px;
+    }
+    
+    &__form {
+      width: 400px;
+    
+      & input {
+        width: 190px;
+        margin-bottom: 35px;
+      }
+
+      & textarea {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tab-width) {
+  .contact {
+
+  }
+}
+
+@media (max-width: $mob-width) {
+  .contact {
+
+  }
+}

@@ -47,3 +47,21 @@
     font-weight: 700;
   }
 }
+
+@media (max-width: $desk-small-width) {
+  .main-header {
+    //ИЗМЕНЕНИЯ НЕ НУЖНЫ!
+  }
+}
+
+@media (max-width: $tab-width) {
+  .main-header {
+
+  }
+}
+
+@media (max-width: $mob-width) {
+  .main-header {
+
+  }
+}

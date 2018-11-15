@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width: 1376px) {
+@media (max-width: $desk-small-width) {
   .about-me {
     padding: 30px 0;
     margin: $section-margin-desk-small;  
@@ -36,12 +36,9 @@
     }
 
     &__text {
-      width: 460px;
+      width: 420px;
       margin-bottom: 20px;
-      color:  $color-grey-light;
-      font-weight: 400;
-      line-height: 28px;
-      text-align: left;    
+   
     }
 
     &__text:last-of-type {
@@ -49,8 +46,20 @@
     }
 
     &__photo {
-      right: 40px;
-      top: -30px;
+      right: 30px;
+      top: -28px;
     }
+  }
+}
+
+@media (max-width: $tab-width) {
+  .about-me {
+
+  }
+}
+
+@media (max-width: $mob-width) {
+  .about-me {
+
   }
 }

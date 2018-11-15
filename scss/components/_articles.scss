@@ -59,7 +59,8 @@
     color: $color-primary;
     text-transform: uppercase;
     text-decoration: none;
-    position: relative;    
+    position: relative;
+    transition: all .7s ease-out;
   }
 
   &__link::before,
@@ -69,7 +70,8 @@
     height: 2px; 
     position: absolute;
       right: 5px;
-    background-color: $color-primary;       
+    background-color: $color-primary;
+    transition: all .7s ease-out;
   }
 
   &__link::before {
@@ -99,5 +101,46 @@
   &__link:focus::after,
   &__link:active::after {
     background-color: $color-white;
+  }
+}
+
+@media (max-width: $desk-small-width) {
+  .articles {
+    padding-top: 150px;
+    margin: $section-margin-desk-small;
+
+    &__item {
+      width: 310px;
+    }
+
+    &__item:nth-child(2) {
+      margin-top: 52px;
+    }
+
+    &__photo {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      box-shadow: -20px -20px 0px rgba(48, 48, 48, 1);    
+    }
+
+    &__heading {
+      margin-bottom: 20px;  
+    }
+
+    &__text {
+      margin-bottom: 20px;     
+    }    
+  }
+}
+
+@media (max-width: $tab-width) {
+  .articles {
+
+  }
+}
+
+@media (max-width: $mob-width) {
+  .articles {
+
   }
 }

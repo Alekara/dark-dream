@@ -38,10 +38,11 @@ p, h1, h2, h3, ul, li {
   padding: 1px;
 }
 
-.btn {
-  display: inline-block;
+.btn {  
   width: 180px;
   height: 57px;
+  padding-top: 19px;
+  display: inline-block;
   border: 1px solid #6b4922;
   text-decoration: none;
   color: $color-primary;
@@ -51,7 +52,8 @@ p, h1, h2, h3, ul, li {
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 19px;
+  transition: all .7s ease-out; 
+  
 }
 
 .btn:hover,
@@ -95,7 +97,7 @@ p, h1, h2, h3, ul, li {
 }
 
 
-@media (max-width: 1376px) {
+@media (max-width: $desk-small-width) {
   
   html, body {    
     font-size: 14px;
@@ -107,10 +109,21 @@ p, h1, h2, h3, ul, li {
   }
   
   .centered-container {
-    width: 1016px;
+    width: 980px;
     min-height: 440px;    
-    padding: 30px 50px;
-  }
-  
-  
+    padding: 30px 40px 40px;
+  }  
 }
+
+@media (max-width: $tab-width) {
+  .centered-container {
+
+  }
+}
+
+@media (max-width: $mob-width) {
+
+}
+
+
+
