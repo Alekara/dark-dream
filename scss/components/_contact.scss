@@ -116,6 +116,26 @@
   .contact {
     margin: $section-margin-mobile;
     
+    &__photo {
+      position: static;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    
+    form {
+      width: 100%;
+      
+      & input {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+
+      & textarea {
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+    }
 
   }
 }

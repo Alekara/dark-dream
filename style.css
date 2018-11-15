@@ -472,7 +472,20 @@ p, h1, h2, h3, ul, li {
         margin-bottom: 50px; } }
 @media (max-width: 720px) {
   .contact {
-    margin: 0 auto 50px; } }
+    margin: 0 auto 50px; }
+    .contact__photo {
+      position: static;
+      display: block;
+      margin: 0 auto 20px; }
+    .contact form {
+      width: 100%; }
+      .contact form input {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px; }
+      .contact form textarea {
+        margin-top: 0;
+        margin-bottom: 50px; } }
 .footer {
   min-height: 200px; }
   .footer__container {
