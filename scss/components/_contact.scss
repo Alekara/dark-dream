@@ -87,13 +87,34 @@
 @media (max-width: $tab-width) {
   .contact {
     margin: $section-margin-tablet;
+    
+    &__title {
+      width: 280px;
+      margin-left: auto;
+      margin-bottom: $title-margin;
+    }
+    
+    &__form {
+      width: 600px;
 
+      & input {
+        width: 300px;
+        margin-left: 320px;
+        margin-bottom: 20px;
+      }
+
+      & textarea {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
   }
 }
 
 @media (max-width: $mob-width) {
   .contact {
     margin: $section-margin-mobile;
+    
 
   }
 }

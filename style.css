@@ -191,8 +191,6 @@ p, h1, h2, h3, ul, li {
   .about-me {
     padding: 30px 0;
     margin: 0 auto 150px; }
-    .about-me__title {
-      margin-bottom: 35px; }
     .about-me__text {
       width: 420px;
       margin-bottom: 20px; }
@@ -457,7 +455,20 @@ p, h1, h2, h3, ul, li {
         margin-bottom: 50px; } }
 @media (max-width: 1024px) {
   .contact {
-    margin: 0 auto 100px; } }
+    margin: 0 auto 100px; }
+    .contact__title {
+      width: 280px;
+      margin-left: auto;
+      margin-bottom: 35px; }
+    .contact__form {
+      width: 600px; }
+      .contact__form input {
+        width: 300px;
+        margin-left: 320px;
+        margin-bottom: 20px; }
+      .contact__form textarea {
+        width: 100%;
+        margin-bottom: 50px; } }
 @media (max-width: 720px) {
   .contact {
     margin: 0 auto 50px; } }
