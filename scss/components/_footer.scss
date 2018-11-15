@@ -27,3 +27,14 @@
     }
   }
 }
+
+@media (max-width: $mob-width) {
+  .footer {
+    
+    &__social {
+      width: 60px;
+      height: 60px;
+    }
+
+  }
+}

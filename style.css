@@ -468,6 +468,7 @@ p, h1, h2, h3, ul, li {
         margin-bottom: 20px; }
       .contact__form textarea {
         width: 100%;
+        margin-top: 20px;
         margin-bottom: 50px; } }
 @media (max-width: 720px) {
   .contact {
@@ -504,5 +505,10 @@ p, h1, h2, h3, ul, li {
       margin-right: 29px; }
     .footer__social:hover {
       background-color: #373737; }
+
+@media (max-width: 720px) {
+  .footer__social {
+    width: 60px;
+    height: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
