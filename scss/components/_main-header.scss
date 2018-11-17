@@ -76,8 +76,7 @@
       margin-bottom: 10px;
       display: block;
       font-size: 140px;
-      line-height: 0.6;
-      
+      line-height: 0.6;      
     }
 
     &__title--bottom {
@@ -91,6 +90,17 @@
 
 @media (max-width: $mob-width) {
   .main-header {
+    width: 360px;
+    padding: 20px;
+    margin: 50px auto 260px;
+    background: transparent;
+    border: 10px solid $color-primary;
+    
+    &__title--middle {
+      margin-bottom: 15px;
+      font-size: 84px;
+      line-height: .75;
 
+    }
   }
 }

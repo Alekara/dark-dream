@@ -157,5 +157,10 @@
     &__title {
 
     }
+    
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

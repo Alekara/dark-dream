@@ -92,5 +92,18 @@
 @media (max-width: $mob-width) {
   .gallery {
     width: 380px;
+    
+    &__photo {
+      display: none;
+    }
+    
+    &__photo--1 {
+      width: 320px;
+      margin: 0 auto;
+      background-color: palegoldenrod;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
