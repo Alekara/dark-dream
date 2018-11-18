@@ -1,10 +1,11 @@
 .footer {
-  min-height: 200px;
+  
 
   &__container {
+    min-height: 150px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   &__social {
@@ -28,8 +29,22 @@
   }
 }
 
+@media (max-width: $tab-width) {
+  .footer {    
+    &__container {
+      min-height: 130px;
+    }
+  }
+}
+
+
+
 @media (max-width: $mob-width) {
   .footer {    
+    &__container {
+      min-height: 100px;
+    }
+    
     &__social {
       width: 60px;
       height: 60px;

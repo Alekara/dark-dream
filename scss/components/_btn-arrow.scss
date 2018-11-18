@@ -2,37 +2,80 @@
   display: none;
 }
 
-@media (max-width: $desk-small-width) {  
-  .btn-arrow {
-    display: none;
-  }
-}
-  
-@media (max-width: $tab-width) {
-  .btn-arrow {
-    display: none;
-  }
-}
-
 @media (max-width: $mob-width) {
   .btn-arrow {
     width: 30px;
-    height: 250px;
+    height: 110px;
     display: block;
     position: absolute;
-    border: none;
-    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    background-color: transparent;
     
     &--left {
-      top: calc(50% - 125px);
+      top: calc(50% - 55px);
+        //20px - это разница между 95 пикселями для заголовка и 75 пикселями, составляющими половину кнопки
       left: 0px;
+      border-right: none;
+    }
+    
+    &--left::before,
+    &--left::after {
+      content: "";
+      width: 20px;
+      height: 2px; 
+      position: absolute;
+        right: 5px;
+      background-color: $color-white;
+      transition: all .7s ease-out;
+    }
+
+    &--left::before {
+      top: 46px;
+      transform: rotate(-45deg);      
+    }
+
+    &--left::after {
+      bottom: 46px;
+      transform: rotate(45deg);      
     }
     
     &--right {
-      top: 100px;
+      top: calc(50% - 55px);
       right: 0px;
+      border-left: none;
+    }
+
+    &--right::before {
+      @extend .btn-arrow--left::before;
+      transform: rotate(45deg);      
+    }
+
+    &--right::after {
+      @extend .btn-arrow--left::after;
+      transform: rotate(-45deg);      
+    }
       
+    &:hover,
+    &:focus {
+      background-color: rgba($color-primary, .6);
+      outline: none;
+    }    
+  }
+}
+
+@media (max-width: $mob-small-width) {
+  .btn-arrow {
+    border: 1px solid transparent;
+    background-color: rgba($color-primary, .3);
+    
+    &--left {
+      left: 30px;
     }
     
+    &--right {
+      right: 30px;
+    }
+
+
   }
 }
