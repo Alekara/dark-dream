@@ -1,0 +1,38 @@
+.btn-arrow {
+  display: none;
+}
+
+@media (max-width: $desk-small-width) {  
+  .btn-arrow {
+    display: none;
+  }
+}
+  
+@media (max-width: $tab-width) {
+  .btn-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .btn-arrow {
+    width: 30px;
+    height: 250px;
+    display: block;
+    position: absolute;
+    border: none;
+    background-color: $color-primary;
+    
+    &--left {
+      top: calc(50% - 125px);
+      left: 0px;
+    }
+    
+    &--right {
+      top: 100px;
+      right: 0px;
+      
+    }
+    
+  }
+}

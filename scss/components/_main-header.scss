@@ -100,7 +100,28 @@
       margin-bottom: 15px;
       font-size: 84px;
       line-height: .75;
+    }
+  }
+}
 
+@media (max-width: $mob-small-width) {
+  .main-header {
+    width: 300px;
+    padding: 10px;
+    margin: 40px auto 260px;
+    
+    &__title--top {
+      margin-top: 18px;
+      margin-bottom: 5px;
+    }
+    
+    &__title--middle {
+      font-size: 78px;
+    }
+    
+    &__title--bottom {
+      font-size: 18px;
+      line-height: 26px;
     }
   }
 }

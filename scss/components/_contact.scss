@@ -139,3 +139,12 @@
 
   }
 }
+
+@media (max-width: $mob-small-width) {
+  .contact {
+    &__title {
+      width: 250px;
+    }
+
+  }
+}

@@ -29,12 +29,19 @@
 }
 
 @media (max-width: $mob-width) {
-  .footer {
-    
+  .footer {    
     &__social {
       width: 60px;
       height: 60px;
     }
+  }
+}
 
+@media (max-width: $mob-small-width) {
+  .footer {    
+    &__social {
+      width: 50px;
+      height: 50px;
+    }
   }
 }

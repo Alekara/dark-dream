@@ -65,8 +65,6 @@ p, h1, h2, h3, ul, li {
   border: 1px solid #6b4922;
 }
 
-
-
 .title {
   font-family: "Droid Serif", serif;
   color: $color-primary;
@@ -90,7 +88,6 @@ p, h1, h2, h3, ul, li {
 
 .centered-container {
   width: 1302px;
-  min-height: 558px;
   box-shadow: 0px 0px 80px 0px rgba(43, 43, 43, 0.3);
   background-color:  $color-dark;
   padding: 50px 70px;
@@ -112,7 +109,7 @@ p, h1, h2, h3, ul, li {
   .centered-container {
     width: 980px;
     min-height: 440px;    
-    padding: 30px 40px 40px;
+    padding: 40px;
   }  
 }
 
@@ -122,12 +119,13 @@ p, h1, h2, h3, ul, li {
   }
   .centered-container {
     width: 680px;
+    padding: 30px 40px;
   }
 }
 
 @media (max-width: $mob-width) {
   .centered-container {
-    width: 400px;
+    width: 370px;
   }
   
   .title {
@@ -135,6 +133,21 @@ p, h1, h2, h3, ul, li {
     line-height: 60px;
     
 
+  }
+}
+
+@media (max-width: $mob-small-width) {
+  .centered-container {
+    width: 290px;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .title::after {
+    width: 100%;
   }
 }
 
