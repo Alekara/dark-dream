@@ -90,7 +90,7 @@ p, h1, h2, h3, ul, li {
   width: 1302px;
   box-shadow: 0px 0px 80px 0px rgba(43, 43, 43, 0.3);
   background-color:  $color-dark;
-  padding: 50px 70px;
+  padding: 40px 70px 50px;
   margin: 0 auto;
   position: relative;
 }
@@ -109,7 +109,7 @@ p, h1, h2, h3, ul, li {
   .centered-container {
     width: 980px;
     min-height: 440px;    
-    padding: 40px;
+    padding: 30px 40px 40px;
   }  
 }
 
@@ -117,9 +117,10 @@ p, h1, h2, h3, ul, li {
   .container {
     background: url(img/bg-medium.jpg) top center no-repeat;
   }
+  
   .centered-container {
     width: 680px;
-    padding: 30px 40px;
+    padding: 20px 40px 30px;
   }
 }
 
@@ -131,15 +132,18 @@ p, h1, h2, h3, ul, li {
   .title {
     font-size: 32px;
     line-height: 60px;
-    
-
   }
 }
 
 @media (max-width: $mob-small-width) {
+  
+  .container {
+    min-width: 290px;
+  }
+  
   .centered-container {
     width: 290px;
-    padding: 20px;
+    padding: 10px 20px 30px;
   }
   
   .title {

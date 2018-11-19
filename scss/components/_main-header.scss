@@ -106,9 +106,10 @@
 
 @media (max-width: $mob-small-width) {
   .main-header {
-    width: 300px;
+    width: 290px;
     padding: 10px;
     margin: 40px auto 260px;
+    border: 5px solid $color-primary;
     
     &__title--top {
       margin-top: 18px;
