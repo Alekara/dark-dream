@@ -25,10 +25,10 @@ p, h1, h2, h3, ul, li {
   padding: 0; }
 
 .container {
-  background: url(img/bg-big.jpg) top center no-repeat;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 1px; }
+  padding: 1px;
+  background: url(img/bg-big.jpg) top center no-repeat; }
 
 .btn {
   width: 180px;
@@ -101,6 +101,9 @@ p, h1, h2, h3, ul, li {
     width: 680px;
     padding: 20px 40px 30px; } }
 @media (max-width: 720px) {
+  .container {
+    background: url(img/bg-small.jpg) top center no-repeat; }
+
   .centered-container {
     width: 370px; }
 
@@ -109,7 +112,8 @@ p, h1, h2, h3, ul, li {
     line-height: 60px; } }
 @media (max-width: 390px) {
   .container {
-    min-width: 290px; }
+    min-width: 290px;
+    background: url(img/bg-extrasmall.jpg) top center no-repeat; }
 
   .centered-container {
     width: 290px;
@@ -180,6 +184,7 @@ p, h1, h2, h3, ul, li {
       font-size: 140px;
       line-height: 0.6; }
     .main-header__title--bottom {
+      width: auto;
       font-size: 20px;
       line-height: 28px;
       color: #ac752f;

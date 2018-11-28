@@ -31,14 +31,11 @@ p, h1, h2, h3, ul, li {
   padding: 0;
 }
 
-
-.container {
-  background: url(img/bg-big.jpg) top center no-repeat;
-  //СДЕЛАТЬ УМЕНЬШЕННЫЕ ВЕРСИИ ФОНА
-  
+.container {    
   max-width: 1920px;
   margin: 0 auto;
   padding: 1px;
+  background: url(img/bg-big.jpg) top center no-repeat;
 }
 
 .btn {  
@@ -126,6 +123,10 @@ p, h1, h2, h3, ul, li {
 }
 
 @media (max-width: $mob-width) {
+  .container {
+    background: url(img/bg-small.jpg) top center no-repeat;
+  }
+  
   .centered-container {
     width: 370px;
   }
@@ -140,6 +141,7 @@ p, h1, h2, h3, ul, li {
   
   .container {
     min-width: 290px;
+    background: url(img/bg-extrasmall.jpg) top center no-repeat;
   }
   
   .centered-container {
