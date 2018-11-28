@@ -1,0 +1,119 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  &__group {
+    margin-bottom: 45px;    
+  }
+  
+  &__group:last-of-type {
+    width: 100%;
+    margin-bottom: 70px;    
+  }
+  
+  &__input {
+    width: 215px;
+    display: block;
+    transition: all .3s;
+  }
+  
+  &__label {
+    
+  }
+  
+  &__textarea {
+    width: 100%;
+  }
+  
+  &__input,
+  &__textarea {
+    padding: 14px 8px;
+    background-color: #373737;
+    border: none;
+    border-bottom: 1px solid #737373;
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 16px;
+    line-height: 28px;    
+    color: #fff;
+  }
+  
+  &__input:focus,
+  &__textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #ad7835;
+  }
+  
+  &__input:focus:invalid {
+    border-bottom: 1px solid red;
+  }
+  
+  &__input:placeholder {
+    color: $color-grey-dark;
+  }
+  
+  &__label {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+  }
+  
+  &__input:not(:placeholder-shown) + &__label {
+    display: block;
+    opacity: 1;
+    visibility: visible;    
+    color: $color-grey-dark;
+    transform: translateY(15px);
+  }
+}
+
+
+@media (max-width: $desk-small-width) {
+  .form {
+    &__group {
+      margin-bottom: 35px;    
+    }
+    
+    &__group:last-of-type {
+      margin-bottom: 50px;    
+    }
+    
+    &__input {
+      width: 190px;;
+    }
+  }
+}
+
+@media (max-width: $tab-width) {
+  .form {
+    &__group {
+      margin-bottom: 20px;    
+    }
+    
+    &__input {
+      width: 300px;
+      margin-left: 320px;
+    }
+
+    &__textarea {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: $mob-width) {
+  .form {
+    &__group {
+      width: 100%;  
+    }
+    
+    &__input {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &__textarea {
+      margin-top: 0;
+    }
+  }
+}

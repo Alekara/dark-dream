@@ -17,37 +17,6 @@
   &__form {
     width: 470px;
     margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    & input {
-      width: 215px;
-      margin-bottom: 45px;
-    }
-
-    & textarea {
-      width: 100%;
-      margin-bottom: 70px;
-    }
-
-    & input,
-    & textarea {
-      padding: 14px 8px;
-      font-family: "Raleway Regular", sans-serif;
-      font-size: 16px;
-      line-height: 28px;      
-      border: none;
-      border-bottom: 1px solid #737373;
-      background-color: #373737;
-      color: #fff;
-    }
-
-    & input:focus,
-    & textarea:focus {
-      outline: none;
-      border-bottom: 1px solid #ad7835;
-    }
   }
 
   &__btn {
@@ -71,15 +40,6 @@
     
     &__form {
       width: 400px;
-    
-      & input {
-        width: 190px;
-        margin-bottom: 35px;
-      }
-
-      & textarea {
-        margin-bottom: 50px;
-      }
     }
   }
 }
@@ -96,18 +56,6 @@
     
     &__form {
       width: 600px;
-
-      & input {
-        width: 300px;
-        margin-left: 320px;
-        margin-bottom: 20px;
-      }
-
-      & textarea {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 50px;
-      }
     }
     
     &__btn {
@@ -126,21 +74,9 @@
       margin: 0 auto 20px;
     }
     
-    form {
+    &__form {
       width: 100%;
-      
-      & input {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 20px;
-      }
-
-      & textarea {
-        margin-top: 0;
-        margin-bottom: 50px;
-      }
     }
-
   }
 }
 
@@ -149,6 +85,5 @@
     &__title {
       width: 250px;
     }
-
   }
 }
